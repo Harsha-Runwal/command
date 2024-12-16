@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 app.get('/hello', function (req, res) {
   console.log("--CALLING rest api New--");
-  var person={firstName:'- Harsha ',lastName:'Runwal'};
+  var person={version:'2.0',firstName:'- Harsha ',lastName:'Runwal'};
   res.send(person);
 });
 
