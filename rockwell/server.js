@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 app.get('/hello', function (req, res) {
   console.log("--CALLING rest api old--");
-  var person={firstName:'- Harsha ',lastName:'Runwal'};
+  var person={version:'1.0',firstName:'- Harsha ',lastName:'Runwal'};
   res.send(person);
 });
 
